@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <button onclick="showEditor('html')">HTML</button>
+        <button onclick="showEditor('css')">CSS</button>
+        <button onclick="showEditor('js')">JavaScript</button>
+    </div>
+    <div id="html-editor" class="editor">
+        <h2>HTML</h2>
+        <textarea id="html-code" placeholder="Write HTML here..."></textarea>
+    </div>
+    <div id="css-editor" class="editor hidden">
+        <h2>CSS</h2>
+        <textarea id="css-code" placeholder="Write CSS here..."></textarea>
+    </div>
+    <div id="js-editor" class="editor hidden">
+        <h2>JavaScript</h2>
+        <textarea id="js-code" placeholder="Write JavaScript here..."></textarea>
+    </div>
+    <button onclick="runCode()">Run</button>
+    <iframe id="output" class="output"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>

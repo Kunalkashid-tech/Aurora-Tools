@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Runner Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Task Runner Generator</h1>
+    <div class="tasks">
+      <label for="taskName">Enter Task Name:</label>
+      <input type="text" id="taskName" placeholder="Task Name">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+    <div class="options">
+      <h2>Select Task Runner:</h2>
+      <label>
+        <input type="radio" name="taskRunner" value="gulp" checked>
+        Gulp
+      </label>
+      <label>
+        <input type="radio" name="taskRunner" value="grunt">
+        Grunt
+      </label>
+      <label>
+        <input type="radio" name="taskRunner" value="npm">
+        npm Scripts
+      </label>
+    </div>
+    <div class="output">
+      <h2>Generated Script:</h2>
+      <textarea id="generatedScript" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

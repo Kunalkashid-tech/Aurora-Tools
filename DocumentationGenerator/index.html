@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation Generator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Documentation Generator</h1>
+    <form id="docForm">
+        <label for="entryTitle">Entry Title:</label>
+        <input type="text" id="entryTitle" required>
+        <label for="entryContent">Entry Content:</label>
+        <textarea id="entryContent" rows="5" required></textarea>
+        <button type="submit">Add Entry</button>
+    </form>
+    <div id="entries">
+        <!-- Entries will be displayed here -->
+    </div>
+    <button id="downloadBtn">Download Documentation</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

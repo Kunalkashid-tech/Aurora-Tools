@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Filters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram Filters</h1>
+        <div class="upload-section">
+            <button onclick="document.getElementById('upload').click()">Upload File</button>
+            <input type="file" id="upload" accept="image/*" style="display: none;" onchange="loadImage(event)">
+        </div>
+        <div class="image-section">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="filters">
+            <button onclick="applyFilter('normal')">Normal</button>
+            <button onclick="applyFilter('grayscale')">Grayscale</button>
+            <button onclick="applyFilter('sepia')">Sepia</button>
+            <button onclick="applyFilter('invert')">Invert</button>
+        </div>
+        <div class="controls">
+            <button onclick="resetImage()">Reset</button>
+            <button onclick="downloadImage()">Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
